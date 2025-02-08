@@ -15,7 +15,8 @@ const fileInput = document.querySelector('.file-input');
 const stopResponseBtn = document.querySelector('.stop-response-btn');
 const changeThemeBtn = document.querySelector('.change-theme-btn');
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL;
+const API_KEY = 'AIzaSyARHMGebEYa-N1m3VPHpSHJyXNCznxgIZU';
+const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
 let isTypingEffectInProgress = false;
 let typingInterval, controller;
