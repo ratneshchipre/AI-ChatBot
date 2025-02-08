@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" href="./assets/title-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>AI Assist</title>
+</head>
+<body>
+    
+    <sec class="name-sec">
+
+        <h2 class="heading-txt">
+            What should we call you?
+        </h2>
+
+        <input class="input-username" type="text" placeholder="e.g. AI, abc">
+
+        <button class="submit-username-btn">
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <div class="input-empty-msg"></div>
+
+    </sec>
+
+    <main>
+
+        <div class="content">
+
+            <div class="greeting-container">
+
+                <h1 class="greeting-txt">Hello, Ratnesh</h1>
+
+            </div>
+
+            <div class="chats-wrapper"></div>
+
+            <div class="prompt-container">
+
+                <div class="file-upload-wrapper">
+
+                    <!-- <div class="file-container">
+
+                        <img class="file" id="img" src="./assets/tset-img.jpg">
+
+                        <button class="cancel-file-btn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+
+                    </div> -->
+
+                </div>
+
+                <div class="prompt-input-wrapper">
+
+                    <textarea class="prompt-input" type="text" placeholder="Message AI"></textarea>
+
+                </div>
+
+                <div class="prompt-controls">
+
+                    <div class="prompt-caution-msg">
+
+                        <p>This is AI-generated content and may not always be accurate.</p>
+
+                    </div>
+
+                    <div class="controls">
+
+                        <input type="file" accept="image/*, .pdf, .txt, .csv" class="file-input" hidden>
+
+                        <button class="change-theme-btn">
+                            <i class="fa-solid fa-moon"></i>
+                        </button>
+                            
+                        <button class="add-file-btn">
+                            <i class="fa-solid fa-paperclip"></i>
+                        </button>
+                        
+                        <button class="send-prompt-btn">
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </button>
+
+                        <button class="stop-response-btn">
+                            <i class="fa-regular fa-circle-stop"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
